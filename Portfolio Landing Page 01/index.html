@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+  <html lang="en">
+   <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+     <title>Portfolio Landing Page</title>
+     <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="images/fav-icon.png">
+     <script src="https://kit.fontawesome.com/c8e4d183c2.js"crossorigin="anonymous"></script>
+   </head>
+     <body>
+        <section class="banner" id="sec">
+           <header>   
+               <div class="logo">
+             <img src="logo3.png"></div> 
+             <div id="toggle" onclick="toggle()"></div>
+           </header>
+        <div class="content">
+            <h2>Hey!<br>I'm <span>Bamigbayan Ameer</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatum <br>reiciendis eius laborum minus, officia similique, quo libero eum, cupiditate<br> ipsum necessitatibus quasi hic ipsam minima vero repudiandae sint<br> assumenda?<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Tempora quo inventore corporis, sit ex nemo eum assumenda cumque consectetur necessitatibus,<br> optio totam illo blanditiis a error exercitationem, amet quas magni?</p>
+            <button type="button"> <a  href = "mailto: ameerdamilola@gmail.com">Send Email</a>
+                </button></div>
+                
+         
+          
+        
+          <ul class="sci">
+               <li><a href="https://www.twitter.com/ameer_105/"><img src="twitter.png"></a></li>
+               <li><a href="https://stackoverflow.com/story/ameer_105/"><img src="stackoverflow.png"></a></li>
+               <li><a href="https://facebook.com/Ameer.Bamigbayan.1/"><img src="facebook.png"></a></li>
+               <li><a href="https://github.com/AmeerDamilola"><img src="github.png"></a></li>
+          </ul>
+
+          
+        </section>
+           <div id="navigation">
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contacts</a></li>
+             </ul>
+           </div>
+
+       <!---skills------------------------>
+       <section id="skills">
+           <!-----text-->
+        <div class="skill-text">
+          <!----heading-->
+       <div class="skill-heading">
+       <span>My Skills</span>
+       <h2>My Experties</h2>
+    </div>
+          <!----skill-box-container-->
+          <div class="s-box-container">
+              <!----skill-box------>
+              <div class="skill-box">
+                  <!------icon------->
+                  <div class="s-box-icon">
+                      <i class="fab fa-html5"></i>
+                  </div>
+                  <!---------s-box-text----->
+                  <div class="s-box-text">
+                  <strong>Hyper Text Markup Language(HTML)</strong>
+                  <p>I have 3 years experience in HTML and I've completed 40+ HTML projects</p>
+                </div>
+              </div>
+
+
+
+             
+                <!----skill-box------>
+                <div class="skill-box">
+                    <!------icon------->
+                    <div class="s-box-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <!---------s-box-text----->
+                    <div class="s-box-text">
+                    <strong>Cascading Style Sheet(CSS)</strong>
+                    <p>I have 2 years experience in CSS and I've completed 30+ CSS projects</p>
+                  </div>
+                </div>
+
+                
+                    <!----skill-box------>
+                    <div class="skill-box">
+                        <!------icon------->
+                        <div class="s-box-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <!---------s-box-text----->
+                        <div class="s-box-text">
+                        <strong>Javascript(JS)</strong>
+                        <p>I have 14 months experience in JS and I've used it in the completion 27 projects</p>
+                      </div>
+                    </div>
+
+          </div>
+
+    </div>
+
+    <!---img---->
+    <div class="skill-img">
+    <img src="vector1.png">
+</div>
+       </section>
+
+  <!--------recent-projects------------->
+  <section id="recent">
+  <!-------heading--------------->
+  <div class="recent-heading">
+      <span>Recent</span>
+       <h3>Recent Web Design Project
+       </h3>
+    </div>
+    <!----img------------>
+    <div class="recent-img">
+        <img src="onlinelearning.jpg"/>
+    </div>
+    <!-------btn------------->
+    <div class="recent-btn">
+    <a href="#">Hire Me On Fiverr</a>
+</div>
+  </section>
+
+   <!---client--------------->
+   <section id="client">
+       <!--heading----------->
+       <div class="client-heading">
+           <span>Comments</span>
+           <h3>Client's Say</h3>
+       </div>
+       <!--------client-box-containers--------->
+       <div class="c-box-containers">
+           <!----box-1--------->
+          <div class="client-box">
+              <!----img------------>
+              <img src="bman.jpg">
+              <!------stars/reviews----------->
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            <!----details/comment--------->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nulla laudantium illum impedit sequi quam hic, nesciunt maiores eveniet culpa quasi temporibus fuga iusto magnam ipsa minus laborum. Sequi, molestias!</p>
+        <!---btn--------------->
+          <a href="#">Read More</a>
+        </div>
+       </div>
+   </section>
+
+
+
+
+
+
+   <style>
+     @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+     }
+
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 100px;
+        z-index: 10000;
+        transition: 0.6s;
+    }
+
+    header .logo{
+        position: relative;
+        font-weight: 700;
+        color: #263240;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.6s;
+    }
+
+    .logo{
+        margin: auto;
+        margin-left: -225px;
+        margin-top: -120px;
+        width: 50%;
+        height: 50%;
+
+        
+    }
+
+    header #toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    
+    header #toggle:before{
+        content: '';
+        position: absolute;
+        top: 7px;
+        width: 100%;
+        height: 2px;
+        background: #ffc096;
+    }
+
+    header #toggle:after{
+        content: '';
+        position: absolute;
+        
+        bottom: 7px;
+        width: 100%;
+        height: 2px;
+        background: #ffc096;
+    }
+
+    .banner.active header #toggle:before{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .banner.active header #toggle::after{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .banner{
+        position: relative;
+        width: 100%;
+        min-height: 120vh;
+        padding: 100px;
+        background: url(bg3.jpg);
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .banner.active{
+        transform: translateX(-400px);
+    }
+
+    #navigation{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 400px;
+        height: 120vh;
+        background: #9407ab;
+        z-index: 1;
+        display: grid;
+        place-items: center;
+        transition: 0.5s;
+    }
+
+    #navigation.active{
+        right: 0;
+    }
+
+    #navigation ul{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navigation ul li{
+        list-style: none;
+        
+
+    }
+
+    #navigation ul li a{
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    #navigation ul li a:hover{
+          background: #32065b;
+    }    
+    .content{
+        max-width: 600px;   
+    }
+
+    .content h2{
+        color: #fff;
+        font-size: 2.7em;
+        margin-top: 100px;
+        margin-left: -40px;
+    }
+
+    .content h2 span{
+        color: #ffc096;
+        font-size: 1.0em;
+        left: 200px;
+       
+    }
+
+    .content p{
+        font-size: 1em;
+        color: #fff;
+        font-weight: 300;
+        margin-left: -40px;
+        margin-top: 3%;
+    }
+
+
+
+
+    .content button {
+    border: 1px solid #ffc096;
+    background: transparent;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: #000000;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: -40px;
+    
+   
+}
+
+.content button a{
+    background: transparent;
+    color: #ffc096;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 0px;
+   
+    
+}
+
+.content button:hover{
+     background:#9407ab;
+}
+
+
+
+
+
+    .sci{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin-left: 86%;
+        top: 50%;
+    }
+
+    .sci li{
+        list-style: none;
+    }
+
+    
+.sci li a{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+    border: 1px solid #ffc096;
+    margin: 10px 20px 0;
+}
+
+.sci li a img{
+    max-width: 20px;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+.sci li a:hover{
+     background:  #9407ab;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto auto 50px auto;
+}
+
+.skill-text{
+    width: 400px;
+}
+
+.skill-img{
+    width: 600px;
+    height: 600px;
+}
+
+.skill-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.skill-heading span{
+    color: #ee1f96;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.skill-heading h2{
+    color: #14305e;
+    font-size: 3.3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.s-s-box-container{
+     margin-top: 30px;
+}
+
+.skill-box{
+     display: flex;
+     margin: 25px 0px;
+}
+
+.s-box-icon{
+     margin-right: 12px;
+}
+.s-box-icon i{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #f0f0f0;
+     font-size: 1.1rem;
+}
+
+.s-box-text strong{
+    color:#14305e;
+    margin: 0px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.s-box-text p{
+     color: #747474;
+     font-size: 0.9rem;
+}
+
+.fa-html5{
+    color: #e06061;
+}
+
+.fa-css3-alt{
+    color: #416cdf;
+}
+
+.fa-js-square{
+    color: #f98231;
+}
+
+#recent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    flex-direction: column;
+}
+
+.recent-heading span,
+.client-heading span{
+    color: #36b7b5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.recent-heading h3{
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.recent-img{
+    margin: 0px 40px;
+}
+
+.recent-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.recent-btn{
+    border: 1px solid #0076fa;
+    background: transparent;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: #000000;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 180px;
+    margin-top: 0px;
+}
+
+.recent-btn  a {
+    background: transparent;
+    color: #0076fa;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 120%;
+}
+
+.recent-btn:hover{
+    background: #012957;
+}
+
+.client-heading h3{
+    color: #1c3548;
+    font-size: 3rem;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+#client{
+    width: 100%;
+    border-top: 1px solid rgba(58, 58, 58, 0.03);
+    border-bottom: 1px solid rgba(58, 58, 58, 0.03);
+    padding:  50px 0px;
+    background-image: url(back2.png);
+    background-position: center;
+    background-size: 1000px;
+}
+
+.client-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+   </style>                 
+     
+     
+     
+     
+     
+     <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+             sec.classList.toggle('active')
+             nav.classList.toggle('active')
+        }
+    </script>
+     
+     
+     
+     </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </html>
